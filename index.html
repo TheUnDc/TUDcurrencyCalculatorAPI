@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator walut</title>
+    <meta property="og:image" content="images/CurCalcShare.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/currency_ico.jpg">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body class="body">
+    <main class="container">
+
+        <section class="js-form form">
+
+            <fieldset class="fieldset">
+
+                <legend class="fieldset__legend">
+                    Kalkulator walut API
+                </legend>
+
+                <p class="paragraph__margin">
+
+                    <label>
+                        <span class="form__labelText">
+                            Waluta początkowa:
+                        </span>
+                    </label>
+
+                    <select class="js-firstInput form__field" name="firstCurrency">
+                        <option selected value="EUR">Euro</option>
+                        <option value="USD">Dolar</option>
+                        <option value="PLN">Złoty</option>
+                    </select>
+
+                    <input class="js-valueCurrency form__field" type="number" min="0" autofocus name="waluta" value="1"
+                        step="any">
+                </p>
+
+                <button type="button" class="js-swapButton swap__button">
+                    ⮀ SWAP ⮀
+                </button>
+
+                <P class="paragraph__margin">
+
+                    <label>
+                        <span class="form__labelText">
+                            Waluta końcowa:
+                        </span>
+                    </label>
+
+                    <select class="js-secoundInput form__field" name="secondCurrency">
+                        <option value="EUR">Euro</option>
+                        <option value="USD">Dolar</option>
+                        <option selected value="PLN">Złoty</option>
+                    </select>
+
+                    <input readonly class="js-documentResult form__field" type="text">
+                </p>
+
+                <p>
+                    <button class="js-testButton form__button">&#128425 Przelicz &#128425</button>
+                </p>
+                <p style="color: white;">
+                    Ostrzeżenie. Spamowanie przyciskiem grozi crashem.
+                </p>
+            </fieldset>
+        </section>
+    </main>
+</body>
+
+</html>
