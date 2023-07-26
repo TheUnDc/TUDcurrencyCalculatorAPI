@@ -1,0 +1,18 @@
+.container {
+    max-width: 700px;
+    padding: 0 20px;
+    margin: 20px auto;
+}
+
+.body {
+    background-image: url("../images/tlo.png");
+    background-position: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 17px;
+}
+
+.paragraph__margin {
+    margin: auto;
+}
