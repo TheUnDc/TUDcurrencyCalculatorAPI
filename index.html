@@ -37,14 +37,9 @@
                         </span>
                     </label>
 
-                    <select class="js-firstInput form__field" name="firstCurrency">
-                        <option selected value="EUR">Euro</option>
-                        <option value="USD">Dolar</option>
-                        <option value="PLN">Złoty</option>
-                    </select>
-
-                    <input class="js-valueCurrency form__field" type="number" min="0" autofocus name="waluta" value="1"
-                        step="any">
+                    <input class="js-firstInput form__field" name="firstCurrency" list="currency-list" placeholder="Waluta początkowa">
+                        
+                    <input class="js-valueCurrency form__field" type="number" min="0" autofocus name="waluta" value="1" step="any">
                 </p>
 
                 <button type="button" class="js-swapButton swap__button">
@@ -59,12 +54,8 @@
                         </span>
                     </label>
 
-                    <select class="js-secoundInput form__field" name="secondCurrency">
-                        <option value="EUR">Euro</option>
-                        <option value="USD">Dolar</option>
-                        <option selected value="PLN">Złoty</option>
-                    </select>
-
+                    <input class="js-secoundInput form__field" name="secondCurrency" list="currency-list" placeholder="Waluta końcowa">
+                        
                     <input readonly class="js-documentResult form__field" type="text">
                 </p>
 
@@ -74,6 +65,13 @@
                 <p style="color: white;">
                     Ostrzeżenie. Spamowanie przyciskiem grozi crashem.
                 </p>
+
+                <datalist id="currency-list">
+                    <option value="EUR">Euro</option>
+                    <option value="USD">Dolar</option>
+                    <option value="PLN">Złoty</option>
+                </datalist>
+
             </fieldset>
         </section>
     </main>
