@@ -29,17 +29,43 @@
          })
    };
 
+   const inputCheck = () => {
+      const firstElement = document.querySelector(".js-firstInput").value;
+      const secoundElemenet = document.querySelector(".js-secoundInput").value;
+      const writedAmount = document.querySelector(".js-valueCurrency").value;
+      const documentResult = document.querySelector(".js-documentResult");
+
+         if (firstElement === "" || secoundElemenet === "" || writedAmount === "") {
+            documentResult.classList.add("form__field--error");
+            documentResult.value = "Wypełninj trzy powyżesze pola!"
+         } else {
+            documentResult.classList.remove("form__field--error");
+            calculateCurrency();
+         }
+         
+   };
+
    const init = () => {
       doDevGreetings();
       const calculateButton = document.querySelector(".js-calculateButton");
-
-      const formElement = document.querySelector(".js-form");
       const swapButton = document.querySelector(".js-swapButton");
+
       swapButton.addEventListener("click", swapCurrency);
-      formElement.addEventListener("submit", calculateCurrency);
-      calculateButton.addEventListener("click", calculateCurrency);
+      calculateButton.addEventListener("click", inputCheck);
    };
 
    init();
+   
 }
 
+// const inputCheck = () => {
+//    const firstElement = document.querySelector(".js-firstInput").value;
+//    const secoundElemenet = document.querySelector(".js-secoundInput").value;
+//    const writedAmount = document.querySelector(".js-valueCurrency").value;
+
+//       if (firstElement === "" || secoundElemenet === "") {
+
+//       } else {
+//          calculateCurrency();
+//       }
+// };

@@ -37,5 +37,11 @@
 }
 
 .form__field--choose {
-    width: 20%;  
+  width: 20%;
+}
+
+.form__field--error {
+  border-color: red;
+  background-color: crimson;
+  color: white;
 }
