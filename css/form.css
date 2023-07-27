@@ -1,6 +1,5 @@
 .form__labelText {
   color: white;
-  width: 130px;
   display: inline-block;
   margin: 5px;
 }
@@ -29,7 +28,14 @@
 }
 
 .form__field {
-    padding: 2px;
-    border: none;
-    background-color: #ffffffaa;
-  }
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  background-color: #ffffffaa;
+  width: 60%;
+  align-self: center;
+}
+
+.form__field--choose {
+    width: 20%;  
+}

@@ -30,31 +30,31 @@
                     Kalkulator walut API
                 </legend>
 
-                <p class="paragraph__margin">
-
+                <div>
                     <label class="form__labelText">
-                        Waluta początkowa:
+                         Waluta początkowa:
                     </label>
-
-                    <input class="js-firstInput form__field" name="firstCurrency" list="currency-list" placeholder="Waluta początkowa">
+    
+                    <input class="js-firstInput form__field form__field--choose" name="firstCurrency" list="currency-list" placeholder="Z:">
+                </div>
                         
-                    <input class="js-valueCurrency form__field" type="number" min="0" autofocus name="waluta" value="1" step="any">
-                </p>
+                <input class="js-valueCurrency form__field" type="number" min="0" autofocus name="waluta" value="1" step="any">
+                
 
                 <button type="button" class="js-swapButton swap__button">
                     ⮀ SWAP ⮀
                 </button>
 
-                <P class="paragraph__margin">
-
+                <div>
                     <label class="form__labelText">
-                         Waluta końcowa:
+                        Waluta końcowa:
                     </label>
-
-                    <input class="js-secoundInput form__field" name="secondCurrency" list="currency-list" placeholder="Waluta końcowa">
+   
+                    <input class="js-secoundInput form__field form__field--choose" name="secondCurrency" list="currency-list" placeholder="DO:">
+                </div>
                         
-                    <input readonly class="js-documentResult form__field" type="text">
-                </p>
+                <input readonly class="js-documentResult form__field" type="text">
+                
 
                 <p>
                     <button class="js-calculateButton form__button">&#128425 Przelicz &#128425</button>
