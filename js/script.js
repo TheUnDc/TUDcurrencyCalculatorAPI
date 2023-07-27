@@ -31,13 +31,13 @@
 
    const init = () => {
       doDevGreetings();
-      const testButton = document.querySelector(".js-testButton");
+      const calculateButton = document.querySelector(".js-calculateButton");
 
       const formElement = document.querySelector(".js-form");
       const swapButton = document.querySelector(".js-swapButton");
       swapButton.addEventListener("click", swapCurrency);
       formElement.addEventListener("submit", calculateCurrency);
-      testButton.addEventListener("click", calculateCurrency);
+      calculateButton.addEventListener("click", calculateCurrency);
    };
 
    init();
