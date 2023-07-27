@@ -57,15 +57,3 @@
    init();
    
 }
-
-// const inputCheck = () => {
-//    const firstElement = document.querySelector(".js-firstInput").value;
-//    const secoundElemenet = document.querySelector(".js-secoundInput").value;
-//    const writedAmount = document.querySelector(".js-valueCurrency").value;
-
-//       if (firstElement === "" || secoundElemenet === "") {
-
-//       } else {
-//          calculateCurrency();
-//       }
-// };
